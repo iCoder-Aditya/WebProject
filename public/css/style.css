@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,500;8..30,600;8..30,700;8..30,800;8..30,900&display=swap');
+
+*{
+    font-family: 'Piazzolla', serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+
+html{
+    font-size: 62.5%;
+    /* height: 100%; */
+}
+.main_menu{
+    background: var(--main-bg);
+}
+.navbar{
+    background: var(--main-bg);
+    color: var(--main-color);
+    padding: .5rem 0;
+}
+.navbar-toggler-icon{
+    background: #fff;
+}
+.navbar li{
+    padding-left: 2rem;
+}
+.navbar a{
+    color: #fff;
+    font-size:1.4rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+/* hero section */
+
+.main_header_left{
+   height: 56rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+.main_header_left .text-clr{
+   color: var(--main-color);
+}
+.main_header_left p{
+   font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: .5rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main_header_left .button{
+    outline: none;
+    text-decoration: none;
+    color: #111;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    box-shadow: 0px 8px 6px -6px #111;
+}
+.main_header_left .button:active{
+    box-shadow: none;
+}
+.main_header_center{
+    height: 57.5rem;
+} 
+.main_header_center figure img{
+    height: 30rem;
+} 
+.main_header_right{
+    height: 56rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.main_header_right .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height:50rem;
+}
+.main_header_right figure img{
+    height: 380px;
+    filter: drop-shadow(0px 0.5rem 1rem rgb(0,0,0,0.3));
+}
+
+/* temprature styling */
+.searchbar{
+    width: 70%;
+    height: 5rem;
+    padding: .5rem;
+    background: var(--main-bg);
+    border-radius: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar .temp_form{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchbar #cityName{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    color:white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background: none;
+}
+.searchbar #submitBtn{
+    border: none;
+    border-radius: 3rem;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    color:white;
+}
+.searchbar #submitBtn:hover{
+    font-size: 1.3rem;
+    outline: none;
+    font-weight: 500;
+    background-color: rgb(238, 238, 238);
+    color: var(--main-color);
+}
+::placeholder{
+    color: rgb(150, 150, 150);
+}
+.tempInfo{
+    width: 35rem;
+    height: 25rem;
+    border-radius: 2rem;
+    background:#1e272ee9;
+}
+.tempInfo .toplayer{
+    padding: 2rem 2rem;
+    height: 20%;
+    border-radius: 2rem 2rem 0 0;
+    background: var(--main-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tempInfo .toplayer p{
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 500;
+    color:white;
+}
+.tempInfo .mian_layer{
+    padding: 1.5rem 2rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.tempInfo .mian_layer .cityname{
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 500;
+    color:white;
+}
+.tempInfo .mian_layer .middle_layer{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   align-items: center;
+}
+sup{
+    font-size: 4rem;
+    /* margin-top: -2rem; */
+    font-weight: 600;
+}
+.data_hide{
+    visibility: hidden;
+    transform: all 0.3s linear;
+}
+.tempInfo .mian_layer .middle_layer #temp{
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 900;
+    color:white;
+}
+.tempInfo .mian_layer .middle_layer #temp_status{
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 900;
+    color:white;
+}
+
+ /* footer */
+ .footer{
+    margin-top: auto;
+    background: var(--main-bg);
+ }
+ .footer div{
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* respive code */
+
+@media (max-width:768px) {
+   .main_header_left{
+    height: auto;
+    margin: 5rem 0;
+   }
+   .main_header_right{
+    height: auto;
+    margin-right: 5rem 0;
+   }
+   .temp_form{
+    width: auto;
+   }
+   .tempInfo{
+    width: auto;
+   }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    {{>header_links}}
+</head>
+
+<body>
+    <!-- Navbar -->
+    {{>navbar}}
+    <!-- Hero section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="searchbar mx-auto my-5">
+                    <form class="temp_form">
+                        <input type="text" name="" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInfo mx-auto my-5">
+                    <div class="toplayer">
+                        <p class="day">tuesday</p>
+                        <p class="today_date">13 oct</p>
+                    </div>
+                    <div class="mian_layer">
+                        <div class="cityname">Get Output here</div>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_val">0</span> <sup>o</sup>c</p>
+                            <div id="temp_status">☁</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer  -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
